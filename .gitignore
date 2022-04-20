@@ -1,0 +1,6 @@
+.env
+.cardapio
+.idea
+*.sqlite3
+*.pyc
+__pycache__
