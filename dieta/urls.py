@@ -13,11 +13,13 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from dieta.training.views import training
 from dieta.core import views
 from django.contrib import admin
 from django.urls import path
 
 urlpatterns = [
+    path('training/', training),
     path('', views.home),
     path('admin/', admin.site.urls),
 ]
