@@ -1,28 +1,181 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+{% load static %}
 
-    <title>Workouts of Bodybuilding</title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Workouts of Bodybuilder!</title>
+
+    <link rel="shortcut icon" href="{% static 'img/favicon(1).ico' %}"/>
+    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
 </head>
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="jumbotron">
-				<font face="Roman">
-					<h1>
-						Be Welcome in the Jungle !
-					</h1>
-				</font><br>
-				<font face="Roman">
-					<h3>
-						This is a menu for you diet
-					</h3>
-				</font>
-			</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="jumbotron card card-block">
+                <font face="Roman">
+                    <h1>
+                        <strong>Here are some workouts !!!</strong>
+                    </h1>
+                </font>
+                <font face="Roman">
+                    <h4>
+                        Swipe down to see workouts.
+                    </h4>
+                </font>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <font face="Roman">
+                        <center>
+                            <h1>
+                                Back Workout
+                            </h1>
+                        </center>
+                        <h3>
+                            Here it is a back workout for you, see below.
+                        </h3>
+                    </font>
+                    <ul type="square">
+                        <li>Rowing unilateral with dumbbells
+                        <li>Rower machine
+                        <li>Bent-over barbell row
+                        <li>Pull-up
+                        <li>High pull
+                    </ul>
+                    <img alt="Bootstrap Image Preview" src="https://i.ytimg.com/vi/xuwvNZm6_-8/hqdefault.jpg"
+                         class="rounded" width="300" height="200">
+                    <div class="row">
+                        <div class="col-md-12"><br>
+                            <font face="Roman">
+                                <center>
+                                    <h1>
+                                        Chest Workout
+                                    </h1>
+                                </center>
+                                <h3>
+                                    Here it is a chest workout for you, see below.
+                                </h3>
+                            </font>
+                            <ul type="square">
+                                <li>Parallel
+                                <li>Bench press
+                                <li>Incline bench press
+                                <li>Chest Fly machine
+                                <li>Chest fly
+                            </ul>
+                            <img alt="Bootstrap Image Preview"
+                                 src="http://www.simplyshredded.com/wp-content/uploads/2010/09/chest.jpg"
+                                 class="rounded"
+                                 width="300" height="200">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <font face="Roman">
+                        <center>
+                            <h1>
+                                Legs Workout
+                            </h1>
+                        </center>
+                        <h3>
+                            Here it is a legs workout for you, see below.
+                        </h3>
+
+                    </font>
+                    <ul type="square">
+                        <li>Leg press
+                        <li>Leg extension
+                        <li>Squat with barbell
+                        <li>Deadlift
+                        <li>Calf machine
+                    </ul>
+                    <img alt="Bootstrap Image Preview" src="https://i.ytimg.com/vi/qmFuItOiC0M/mqdefault.jpg"
+                         class="rounded" width="300" height="200">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <font face="Roman"><br>
+                                <center>
+                                    <h1>
+                                        Arms Workout
+                                    </h1>
+                                </center>
+                                <h3>
+                                    Here it is an arms workout for you, see below.
+                                </h3>
+                            </font>
+                            <ul type="square">
+                                <li>Barbell curl
+                                <li>Biceps curl
+                                <li>Biceps pulley
+                                <li>Push-up
+                                <li>Cable triceps extension
+                            </ul>
+                            <img alt="Bootstrap Image Preview"
+                                 src="data:image/jpeg;base64,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"
+                                 class="rounded" width="300"
+                                 height="200">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <font face="Roman">
+                        <center>
+                            <h1>
+                                Shoulders Workout
+                            </h1>
+                        </center>
+                        <h3>
+                            h3. Lorem ipsum dolor sit amet.
+                        </h3>
+                    </font>
+                    <ul type="square">
+                        <li>Side elevation
+                        <li>Front elevation
+                        <li>military development
+                            <br><br><br>
+                    </ul>
+                    <img alt="Bootstrap Image Preview"
+                         src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3Gv3tK6DhqGWpwN4PZIYn7iCPMNDNX7zp6A&usqp=CAU"
+                         class="rounded" width="300" height="200">
+                    <div class="row">
+                        <div class="col-md-12"><br>
+                            <font face="Roman">
+                                <center>
+                                    <h1>
+                                        Jumping rope
+                                    </h1>
+                                </center>
+                                <h3>
+                                    Jumping rope<br> for 30 minutes.
+                                </h3>
+                            </font>
+                            <ul type="square">
+                                <li>High performance
+                                <li>Cardiovascular
+                                <li>Performance increase
+                                    <br><br><br>
+                            </ul>
+                            <img alt="Bootstrap Image Preview"
+                                 src="https://i.gifer.com/Fibx.gif" class="rounded" width="300"
+                                 height="200">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
+<br>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/scripts.js"></script>
 </body>
 </html>
